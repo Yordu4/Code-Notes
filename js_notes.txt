@@ -1,9 +1,18 @@
 delete ourDog.bark; 
 
-function multiply(arr, n) {
-    if (n <= 0) {
+Math.floor(Math.random() * 20); //return a random number between 0-19
+Math.floor(Math.random() * 21); //return a random number between 0-20
+Math.floor(Math.random() * (max - min + 1)) + min; //return number between min-max
+
+function multiply(arr, n) { //recursion
+    if (n <= 0) { //must have a base case, in this case it's the if statement
         return 1;
     } else {
         return multiply(arr, n - 1) * arr[n - 1];
     }
 }
+
+function convertToInteger(str) {
+  return parseInt(str,2);//you can ommit the radix
+}
+convertToInteger("11");//returns 3
