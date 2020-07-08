@@ -1,3 +1,9 @@
-const - makes read-only variables (you can mutate object declared with const)
-"let" works better with scope than "var"
-Object.freeze(obj); - prevents re-assignment of values to properties
+delete ourDog.bark; 
+
+function multiply(arr, n) {
+    if (n <= 0) {
+        return 1;
+    } else {
+        return multiply(arr, n - 1) * arr[n - 1];
+    }
+}
