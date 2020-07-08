@@ -19,6 +19,21 @@ switch(val) {
 }
 Cases for 1, 2, and 3 will all produce the same result.
 
+var arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]); // ----array push
+// arr2 now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop(); // ----array pop
+console.log(oneDown); // Returns 6
+console.log(threeArr); // Returns [1, 4]
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift(); // ----array shift
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]]
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy"); // ----array unshift
+// ourArray now equals ["Happy", "J", "cat"].
+
 function findGreaterOrEqual(a, b) {
     //condition ? execute if true : execute if false ;
   return (a === b) ? "a and b are equal" 
