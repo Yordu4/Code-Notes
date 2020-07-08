@@ -1,0 +1,3 @@
+const - makes read-only variables (you can mutate object declared with const)
+"let" works better with scope than "var"
+Object.freeze(obj); - prevents re-assignment of values to properties
