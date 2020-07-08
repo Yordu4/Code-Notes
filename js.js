@@ -21,14 +21,29 @@
 // const arr = removeFirstTwo(source); //this const arr is different from const arr inside the function
 // console.log(arr);
 
-const person = {
-    name: "Zodiac Hasbro",
-    age: 56
-  };
-  // Template literal with multi-line and string interpolation
-  const greeting = `Hello, my name is ${person.name}!
-  I am ${person.age+3} years old.`;
-  console.log(greeting); // prints
-  // Hello, my name is Zodiac Hasbro!
-  // I am 56 years old.
+// const person = {
+//     name: "Zodiac Hasbro",
+//     age: 56
+//   };
+//   // Template literal with multi-line and string interpolation
+//   const greeting = `Hello, my name is ${person.name}!
+//   I am ${person.age+3} years old.`;
+//   console.log(greeting); // prints
+//   // Hello, my name is Zodiac Hasbro!
+//   // I am 56 years old.
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result=>{
+console.log(result);
+});
   
