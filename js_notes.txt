@@ -1,3 +1,31 @@
+switch(val) {
+  case 1://could be any data type
+    answer = "a";
+    break;
+  case 2:
+    answer = "b";
+    break;
+  default://this switch has a default which will be executed when theres no cases matched
+    answer = "c";
+}
+switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+Cases for 1, 2, and 3 will all produce the same result.
+
+function findGreaterOrEqual(a, b) {
+    //condition ? execute if true : execute if false ;
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+
 delete ourDog.bark; 
 
 Math.floor(Math.random() * 20); //return a random number between 0-19
@@ -11,8 +39,20 @@ function multiply(arr, n) { //recursion
         return multiply(arr, n - 1) * arr[n - 1];
     }
 }
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]
 
 function convertToInteger(str) {
   return parseInt(str,2);//you can ommit the radix
 }
 convertToInteger("11");//returns 3
+
+obj.hasOwnProperty(checkProp); //returns a boolean value
