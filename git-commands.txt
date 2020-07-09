@@ -1,0 +1,17 @@
+git commands
+
+*git config --global user.name "your_username"
+*git config --global user.email "your_email_address@example.com"
+*git config --global --list
+
+*git remote -v
+*git pull <remote-name> <name-of-branch>
+*git branch -d <branch> . Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet.
+*git checkout <name-of-branch>
+*git remote rm <remote-name> remove a remote from a repository
+*git remote rename <old> <new>
+*git remote add <remote-name> <repository-path>
+*git push <remote-name> <name-of-branch>
+*git clone <url>
+*git checkout <name-of-branch>
+*git merge <name-of-branch> dont put the branch name you're currently on
