@@ -32,19 +32,24 @@
 //   // Hello, my name is Zodiac Hasbro!
 //   // I am 56 years old.
 
-const makeServerRequest = new Promise((resolve, reject) => {
-  // responseFromServer is set to true to represent a successful response from a server
-  let responseFromServer = true;
+// const makeServerRequest = new Promise((resolve, reject) => {
+//   // responseFromServer is set to true to represent a successful response from a server
+//   let responseFromServer = true;
     
-  if(responseFromServer) {
-    resolve("We got the data");
-  } else {  
-    reject("Data not received");
-  }
-});
-makeServerRequest.then(result=>{
+//   if(responseFromServer) {
+//     resolve("We got the data");
+//   } else {  
+//     reject("Data not received");
+//   }
+// });
+// makeServerRequest.then(result=>{
+// console.log(result);
+// });
+// makeServerRequest.catch(error=> {
+//   console.log(error);
+//   });
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);// Change this line
 console.log(result);
-});
-makeServerRequest.catch(error=> {
-  console.log(error);
-  });
