@@ -59,7 +59,12 @@
 // let result = quoteSample.match(alphabetRegex); 
 // console.log(result);
 
-let difficultSpelling = "Mississippi";
-let myRegex = /s+/ig; // gets 
-let result = difficultSpelling.match(myRegex);
+// let difficultSpelling = "Mississippi";
+// let myRegex = /s+/ig; // gets 
+// let result = difficultSpelling.match(myRegex);
+// console.log(result);
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*>/g; // Change this line
+let result = text.match(myRegex);
 console.log(result);
