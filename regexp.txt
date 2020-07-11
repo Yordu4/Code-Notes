@@ -55,3 +55,10 @@ let difficultSpelling = "Mississippi";
 let myRegex = /s+/ig; // gets 
 let result = difficultSpelling.match(myRegex); // result = ["ss", "ss"]
 
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/; // test if 'o' occurs 0 or more times
+soccerWord.match(goRegex); // Returns ["goooooooo"]
+gPhrase.match(goRegex); // Returns ["g"]
+oPhrase.match(goRegex); // Returns null
