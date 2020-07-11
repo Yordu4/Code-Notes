@@ -62,3 +62,26 @@ let goRegex = /go*/; // test if 'o' occurs 0 or more times
 soccerWord.match(goRegex); // Returns ["goooooooo"]
 gPhrase.match(goRegex); // Returns ["g"]
 oPhrase.match(goRegex); // Returns null
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/;
+let result = text.match(myRegex);
+// code above will match "<h1>" 
+// instead of "<h1>Winter is coming</h1>"
+// it will get the shortest match with the ? character
+
+let firstString = "Ricky is first and can be found.";
+let firstRegex = /^Ricky/; //Ricky at the beginning
+firstRegex.test(firstString);
+// Returns true
+let notFirst = "You can't find Ricky now.";
+firstRegex.test(notFirst);
+// Returns false
+
+let theEnding = "This is a never ending story";
+let storyRegex = /story$/;//story at the end
+storyRegex.test(theEnding);
+// Returns true
+let noEnding = "Sometimes a story will have to end";
+storyRegex.test(noEnding);
+// Returns false

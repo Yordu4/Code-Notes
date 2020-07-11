@@ -64,7 +64,11 @@
 // let result = difficultSpelling.match(myRegex);
 // console.log(result);
 
-let text = "<h1>Winter is coming</h1>";
-let myRegex = /<.*>/g; // Change this line
-let result = text.match(myRegex);
-console.log(result);
+// let text = "<h1>Winter is coming</h1>";
+// let myRegex = /<.*?>/g;
+// let result = text.match(myRegex);
+// console.log(result);
+
+// var exp = /t[a-z]*?i/;
+// console.log(exp.test("titanic"));
+// console.log(exp.test("ti"));
