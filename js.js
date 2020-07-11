@@ -47,9 +47,19 @@
 // });
 // makeServerRequest.catch(error=> {
 //   console.log(error);
-//   });
+// });
 
-let myString = "Hello, World!";
-let myRegex = /Hello/;
-let result = myRegex.test(myString);// Change this line
+// let myString = "Hello, World!";
+// let myRegex = /Hello/;
+// let result = myRegex.test(myString);// Change this line
+// console.log(result);
+
+// let quoteSample = "The quick brown fox jumps over the lazy dog.";
+// let alphabetRegex = /[a-z]/ig;
+// let result = quoteSample.match(alphabetRegex); 
+// console.log(result);
+
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/ig; // gets 
+let result = difficultSpelling.match(myRegex);
 console.log(result);
