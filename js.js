@@ -51,7 +51,7 @@
 
 // let myString = "Hello, World!";
 // let myRegex = /Hello/;
-// let result = myRegex.test(myString);// Change this line
+// let result = myRegex.test(myString);
 // console.log(result);
 
 // let quoteSample = "The quick brown fox jumps over the lazy dog.";
@@ -72,3 +72,8 @@
 // var exp = /t[a-z]*?i/;
 // console.log(exp.test("titanic"));
 // console.log(exp.test("ti"));
+
+// let movieName = "2001: A Space Odyssey";
+// let numRegex = /\d/g; // Change this line
+// let result = movieName.match(numRegex).length;
+// console.log(result);
