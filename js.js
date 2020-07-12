@@ -78,3 +78,17 @@
 // let result = movieName.match(numRegex).length;
 // console.log(result);
 
+// let dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+// let someRegexp = /\d+/g;
+// console.log(dateTime.test("01-30-2003 15:20"));
+// console.log(dateTime.test("30-jan-2003 15:20"));
+// console.log(someRegexp.test("729347239472394878"));
+// console.log(someRegexp.test("sdf"));
+// console.log("234234234797 asdadas 1231293".match(someRegexp));
+
+let quit = "qu";
+let noquit = "qt";
+let quRegex= /q(?=u)/;
+let qRegex = /q(?!u)/;
+// console.log(quit.match(quRegex));
+console.log(noquit.match(quRegex));

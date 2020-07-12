@@ -127,6 +127,27 @@ multipleHA.test(A4); // Returns false
 multipleHA.test(A3); // Returns true
 multipleHA.test(A100); // Returns false
 
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+rainbowRegex.test(american); // Returns true
+rainbowRegex.test(british); // Returns true
+
+A positive lookahead will look to make sure the element in the
+search pattern is there, but won't actually match it. A positive
+lookahead is used as (?=...) where the ... is the required part
+that is not matched. On the other hand, a negative lookahead will
+look to make sure the element in the search pattern is not there.
+A negative lookahead is used as (?!...) where the ... is the
+pattern that you do not want to be there. The rest of the pattern
+is returned if the negative lookahead part is not present.
+let quit = "qu";
+let noquit = "qt";
+let quRegex= /q(?=u)/;
+let qRegex = /q(?!u)/;
+quit.match(quRegex); // Returns ["q"]
+noquit.match(qRegex); // Returns ["q"]
+
 // Your regex should match JACK
 // Your regex should not match J
 // Your regex should match Jo
@@ -149,4 +170,3 @@ multipleHA.test(A100); // Returns false
 let username = "JackOfAllTrades";
 let userCheck = /^[a-z]([0-9][0-9]+|[a-z]+\d*)$/i; //correct
 let result = userCheck.test(username);
-
