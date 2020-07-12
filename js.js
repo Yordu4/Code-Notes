@@ -66,8 +66,10 @@
 
 // let text = "<h1>Winter is coming</h1>";
 // let myRegex = /<.*?>/g;
+// let Regex = /.*/g;
 // let result = text.match(myRegex);
 // console.log(result);
+// console.log("sfaasdsd".match(Regex));
 
 // var exp = /t[a-z]*?i/;
 // console.log(exp.test("titanic"));
@@ -86,9 +88,9 @@
 // console.log(someRegexp.test("sdf"));
 // console.log("234234234797 asdadas 1231293".match(someRegexp));
 
-let quit = "qu";
-let noquit = "qt";
-let quRegex= /q(?=u)/;
-let qRegex = /q(?!u)/;
-// console.log(quit.match(quRegex));
-console.log(noquit.match(quRegex));
+// let quit = "qu";
+// let noquit = "qt";
+// let quRegex= /q(?=u)/;
+// let qRegex = /q(?!u)/;
+// // console.log(quit.match(quRegex));
+// console.log(noquit.match(quRegex));
