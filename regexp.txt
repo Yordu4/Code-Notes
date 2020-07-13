@@ -17,10 +17,12 @@ let result = extractStr.match(codingRegex); //returns coding
 
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/ig; // add g flag to extract more matches
-let result = twinkleStar.match(starRegex); //Returns ["Twinkle", "twinkle"]
+let result = twinkleStar.match(starRegex); 
+//Returns ["Twinkle", "twinkle"]
 
 let exampleStr = "Let's have fun with regular expressions!";
-let unRegex = /un./; //matches strings like "fun", "pun", "nun", and "bun"
+let unRegex = /un./; 
+//matches strings like "fun", "pun", "nun", and "bun"
 let result = unRegex.test(exampleStr);
 
 let bigStr = "big";
@@ -147,6 +149,37 @@ let quRegex= /q(?=u)/;
 let qRegex = /q(?!u)/;
 quit.match(quRegex); // Returns ["q"]
 noquit.match(qRegex); // Returns ["q"]
+
+let testStr = "Pumpkin";
+let testRegex = /P(engu|umpk)in/;
+testRegex.test(testStr);
+// Returns true
+
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+rainbowRegex.test(american); // Returns true
+rainbowRegex.test(british); // Returns true
+
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\1/; 
+// the "\1" repeats the expression indide the ()
+// if there are multiple groups of (), the \1 just increment by 1
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["regex regex", "regex"]
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)(\s)\1\2\1$/; //doesn't match "42 42 42 42"
+let result = reRegex.test(repeatNum);
+
+Use Capture Groups to Search and Replace
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+// Returns "The sky is blue."
+    You can also access capture groups in the 
+    replacement string with dollar signs ($).
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'); 
+// the whole expression will be replaced with "Camp Code"
 
 // Your regex should match JACK
 // Your regex should not match J

@@ -35,7 +35,6 @@
 // const makeServerRequest = new Promise((resolve, reject) => {
 //   // responseFromServer is set to true to represent a successful response from a server
 //   let responseFromServer = true;
-    
 //   if(responseFromServer) {
 //     resolve("We got the data");
 //   } else {  
@@ -94,3 +93,11 @@
 // let qRegex = /q(?!u)/;
 // // console.log(quit.match(quRegex));
 // console.log(noquit.match(quRegex));
+
+// let repeatNum = "42 42 42 42";
+// let reRegex = /^(\d+)(\s)\1\2\1$/; 
+// let result = reRegex.test(repeatNum);
+// let result1 = repeatNum.match(reRegex);
+// console.log(result);
+
+console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'));
