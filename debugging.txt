@@ -24,3 +24,36 @@ JavaScript recognizes six primitive (immutable) data types:
 Boolean, Null, Undefined, Number, String, and Symbol (new with ES6)
 and one type for mutable items: Object. Note that in JavaScript,
 arrays are technically a type of object.
+
+*Catch Misspelled Variable and Function Names
+Not Passed
+
+*Catch Unclosed Parentheses, Brackets, Braces and Quotes
+
+*Catch Use of Assignment '=' Operator Instead of 
+Equality '==' Operator
+
+*Catch Missing Open and Closing Parenthesis After a Function Call
+function myFunction() {
+  return "You rock!";
+}
+let varOne = myFunction; // set to equal a function
+let varTwo = myFunction(); // set to equal the string "You rock!"
+
+*Catch Mixed Usage of Single and Double QuotesPassed
+// These are correct:
+const grouchoContraction = "I've had a perfectly 
+wonderful evening, but this wasn't it.";
+const quoteInString = "Groucho Marx once said 
+'Quote me as saying I was mis-quoted.'";
+// This is incorrect:
+const uhOhGroucho = 'I've had a perfectly wonderful 
+evening, but this wasn't it.';
+Of course, it is okay to use only one style 
+of quotes. You can escape the quotes inside the string by
+ using the backslash (\) escape character:
+// Correct use of same quotes:
+const allSameQuotes = 'I\'ve had a perfectly wonderful
+evening, but this wasn\'t it.';
+
+

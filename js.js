@@ -100,4 +100,6 @@
 // let result1 = repeatNum.match(reRegex);
 // console.log(result);
 
-console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'));
+// console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'));
+
+console.log("hello");
