@@ -102,4 +102,6 @@
 
 // console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'));
 
-console.log("hello");
+// myString="today was a good day from God";
+// myRegexp= /\w+/g;
+// console.log(myString.match(myRegexp));

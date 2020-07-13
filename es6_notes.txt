@@ -13,7 +13,8 @@ const doubler = (item) => item * 2;
 const doubler = item => item * 2;
 const multiplier = (item, multi) => item * multi; 
 
-const greeting = (name = "Anonymous") => "Hello " + name; default value can be string or non string
+const greeting = (name = "Anonymous") => "Hello " + name; 
+//default value can be string or non string
 console.log(greeting("John")); // Hello John
 console.log(greeting()); // Hello Anonymous
 
@@ -24,15 +25,33 @@ console.log(howMany(0, 1, 2)); // You have passed 3 arguments.
 console.log(howMany("string", null, [1, 2, 3], { })); // You have passed 4 arguments.
 The rest parameter eliminates the need to check the args array and allows us to apply map(), filter() and reduce() on the parameters array.
 
+Copy an Array with the Spread Operator
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
 arr2 = [...arr1];  // Change this line
-console.log(arr2); //[ 'JAN', 'FEB', 'MAR', 'APR', 'MAY' ]
+console.log(arr2); // [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY' ]
 
 const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr); // returns 89
 Math.max expects comma seperated values, therefore passing arr wont work and will just return NaN, but ...arr evatualtes to 6, 89, 3, 45 not [6, 89, 3, 45] so Math.max accepts it. 
 var maximus = Math.max.apply(null, arr); // returns 89
+
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    newArr.push([...arr]);
+    num--;
+  }
+  return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
+// returns [ [ true, false, true ], [ true, false, true ] ]
+
+Combine Arrays with the Spread Operator
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+// thatArray now equals 
+// ['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']
 
 const user = { name: 'John Doe', age: 34 };
 const name = user.name; // name = 'John Doe'

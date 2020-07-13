@@ -37,6 +37,8 @@ Equality '==' Operator
 
 *Catch Arguments Passed in the Wrong Order When Calling a Function
 
+*Prevent Infinite Loops with a Valid Terminal Condition
+
 *Catch Missing Open and Closing Parenthesis After a Function Call
 function myFunction() {
   return "You rock!";
