@@ -105,3 +105,30 @@
 // myString="today was a good day from God";
 // myRegexp= /\w+/g;
 // console.log(myString.match(myRegexp));
+
+// members = {
+//     Alan: {
+//       online: false
+//     },
+//     Jeff: {
+//       online: true
+//     },
+//     Sarah: {
+//       online: true
+//     }
+// }
+// function countOnline(usersObj) {
+//     let i=0;
+//     for (let b in usersObj){
+//         if (usersObj[b].online){
+//         i++;
+//         }
+//     }
+//     return i;
+// }
+// function getArrayOfUsers(obj) {
+//     return Object.keys(obj); 
+//     //returns an array of keys
+// }
+// console.log(countOnline(members));
+// console.log(getArrayOfUsers(members));
