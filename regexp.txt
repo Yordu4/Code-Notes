@@ -12,7 +12,7 @@ let fccRegex = /freecodecamp/i; //ignore the case of letters
 let result = fccRegex.test(myString); //true
 
 let extractStr = "Extract the word 'coding' from this string.";
-let codingRegex = /coding/; 
+let codingRegex = /coding/;
 let result = extractStr.match(codingRegex); //returns coding
 
 let twinkleStar = "Twinkle, twinkle, little star";
