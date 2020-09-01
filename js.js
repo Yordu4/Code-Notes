@@ -133,21 +133,21 @@
 // console.log(countOnline(members));
 // console.log(getArrayOfUsers(members));
 
-var t0 = performance.now()
+// var t0 = performance.now()
 
-for(var i=0;i<2000;i++){
-    console.log("hello");
-}
+// for(var i=0;i<2000;i++){
+//     console.log("hello");
+// }
 
-var t1 = performance.now()
-console.log(t1 - t0)
+// var t1 = performance.now()
+// console.log(t1 - t0)
 
-var start = new Date().getTime();
+// var start = new Date().getTime();
 
-for(var i=0;i<2000;i++){
-    console.log("hello");
-}
+// for(var i=0;i<2000;i++){
+//     console.log("hello");
+// }
 
-var end = new Date().getTime();
-var time = end - start;
-console.log(time);
+// var end = new Date().getTime();
+// var time = end - start;
+// console.log(time);

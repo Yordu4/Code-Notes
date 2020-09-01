@@ -33,7 +33,11 @@ console.log(arr2); // [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY' ]
 
 const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr); // returns 89
-Math.max expects comma seperated values, therefore passing arr wont work and will just return NaN, but ...arr evatualtes to 6, 89, 3, 45 not [6, 89, 3, 45] so Math.max accepts it. 
+  Math.max expects comma seperated values, 
+  therefore passing arr wont work and will 
+  just return NaN, but ...arr evatualtes to
+  6, 89, 3, 45 not [6, 89, 3, 45] so 
+  Math.max accepts it. 
 var maximus = Math.max.apply(null, arr); // returns 89
 
 function copyMachine(arr, num) {
