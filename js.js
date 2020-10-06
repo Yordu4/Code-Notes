@@ -88,10 +88,10 @@
 // console.log("234234234797 asdadas 1231293".match(someRegexp));
 
 // let quit = "qu";
-// let noquit = "qt";
+// let noquit = "q";
 // let quRegex= /q(?=u)/;
 // let qRegex = /q(?!u)/;
-// // console.log(quit.match(quRegex));
+// console.log(noquit.match(qRegex));
 // console.log(noquit.match(quRegex));
 
 // let repeatNum = "42 42 42 42";
@@ -145,9 +145,11 @@
 // var start = new Date().getTime();
 
 // for(var i=0;i<2000;i++){
-//     console.log("hello");
+//     console.log("hello");``
 // }
 
 // var end = new Date().getTime();
 // var time = end - start;
 // console.log(time);
+
+// console.log(/z{2,5}/.test('zzzzzzz'));`
