@@ -15,3 +15,5 @@ git commands
 *git clone <url>
 *git checkout <name-of-branch>
 *git merge <name-of-branch> dont put the branch name you're currently on
+*git stash          //stash saved but not added files before checking other branch
+*git stash apply    //apply stash to see your saved changes to the current branch
