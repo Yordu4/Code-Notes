@@ -1,0 +1,6 @@
+ssh -keygen -t rsa -C 'email in your github account'
+cd ~/.ssh
+ls
+cat id_rsa.pub
+
+then paste the key in the github in settings>ssh gpg keys>new ssh key

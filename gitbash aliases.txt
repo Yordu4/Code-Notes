@@ -1,0 +1,11 @@
+****how to make aliases
+alias subl="/c/Program\ Files/Sublime\ Text					\2/sublime_text.exe"
+alias gs="git status"
+
+****git bash aliases reference
+subl =sublime text editor
+gc="git commit -m"
+ga="git add ."
+gl="git log"
+gs="git status"
+
