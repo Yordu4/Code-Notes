@@ -87,12 +87,14 @@
 // console.log(someRegexp.test("sdf"));
 // console.log("234234234797 asdadas 1231293".match(someRegexp));
 
-// let quit = "qu";
-// let noquit = "q";
-// let quRegex= /q(?=u)/;
-// let qRegex = /q(?!u)/;
-// console.log(noquit.match(qRegex));
+// let qu = "qu";
+// let q = "q";
+// let pqRegex= /q(?=u)/;
+// let nqRegex = /q(?!u)/;
+// console.log(q.match(nqRegex));
 // console.log(noquit.match(quRegex));
+// console.log(nqRegex.test(q));
+
 
 // let repeatNum = "42 42 42 42";
 // let reRegex = /^(\d+)(\s)\1\2\1$/; 
