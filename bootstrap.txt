@@ -1,0 +1,4 @@
+classes
+- text-center
+- img-responsive
+- 

@@ -1,0 +1,17 @@
+- Directive
+- Services 
+- Routing
+
+npm i -g @angular/cli
+
+ng new <project_name> //creates a folder and repository with the angular boilerplate
+
+ng serve //live development server
+
+- create new component on app folder <name.component.ts>
+
+ng g c component-name // generate a component
+
+- create new service <name.service.ts>
+
+ng g s service-name // generate a service, creates two files, one called spec.ts used for writing unit test for that service
