@@ -1,2 +1,2 @@
 - ii . // open current directory in file explorer
-- cd . > <filename.extension>
+- cd . > (filename.extension) // create blank file

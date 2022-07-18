@@ -7,3 +7,5 @@
 - cd <projectname> and open vs code (code .)
 - py manage.py startapp <appname>
 - py manage.py runserver // run local server
+
+https://www.youtube.com/watch?v=t7DrJqcUviA
