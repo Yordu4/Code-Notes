@@ -1,0 +1,16 @@
+
+
+*echo or echo text >> filename- prints something on terminal [example echo Hello World!]
+*ls or ls <flag>  - stands for list
+// a flag for example is --all or -a
+// --help flag is available when needed [example ls --help]
+*clear 
+*cd - stands for change directory
+*mkdir <foldername> - make directory/folder
+*rmdir <foldername> - removes/deletes directory/folder
+*touch <filename.extension> - creates a file
+*cp <filename> <destination> - copies a file to a target destination [example cp footer.jpeg client/src]
+*mv <filename> <destination> - moves a file to a target destination
+*rm <filename> - remove or deletes a file in a directory
+*find - this command is used to view the directory tree [example find -name index.html and find client/src]
+*exit - exit terminal
